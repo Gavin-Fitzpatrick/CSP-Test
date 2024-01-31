@@ -1,10 +1,8 @@
 const express = require('express');
-const helmet = require('helmet');
 const crypto = require('crypto');
 const path = require('path');
 const app = express();
 
-app.use(helmet());
 
 app.use((req, res, next) => {
   // Generate a nonce
